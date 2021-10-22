@@ -1,10 +1,10 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 int main() {
 	int i, n;
 	int prime[500];
-	int ptr = 0;//ÀÌ¹Ì ¾òÀº ¼Ò¼öÀÇ °³¼ö
-	unsigned long counter = 0;//³ª´°¼À È½¼ö
+	int ptr = 0;//ì´ë¯¸ ì–»ì€ ì†Œìˆ˜ì˜ ê°œìˆ˜
+	unsigned long counter = 0;//ë‚˜ëˆ—ì…ˆ íšŸìˆ˜
 	prime[ptr++] = 2;//prime[0]=2;
 	for (n = 3; n <= 1000; n += 2)
 	{
@@ -17,5 +17,5 @@ int main() {
 			prime[ptr++] = n;
 	}
 	for (i = 0; i < ptr; i++)	printf("%d\n", prime[i]);
-	printf("³ª´°¼ÀÀ» ½ÇÇàÇÑ È½¼ö : %lu\n", counter);
+	printf("ë‚˜ëˆ—ì…ˆì„ ì‹¤í–‰í•œ íšŸìˆ˜ : %lu\n", counter);
 }
