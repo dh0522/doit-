@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 int main()
 {
@@ -13,5 +13,5 @@ int main()
 		}
 		if (n % i == 0)	printf("%d\n", n);
 	}
-	printf("³ª´°¼ÀÀ» ½ÇÇàÇÑ È½¼ö : %lu\n", counter);
+	printf("ë‚˜ëˆ—ì…ˆì„ ì‹¤í–‰í•œ íšŸìˆ˜ : %lu\n", counter);
 }
