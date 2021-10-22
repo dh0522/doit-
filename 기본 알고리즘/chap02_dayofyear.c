@@ -1,3 +1,4 @@
+/*한글왜깨져*/
 #include <stdio.h>
 
 int mdays[][12] = {
@@ -28,7 +29,7 @@ int main() {
 		scanf("%d", &month);
 		printf("일:");
 		scanf("%d", &day);
-		printf("%d년의 %d일째입니다..\n", year, dayofyear(year, month, day));
+		printf("%d년의 %d일째입니다.\n", year, dayofyear(year, month, day));
 	} while (retry == 1);
 
 }
