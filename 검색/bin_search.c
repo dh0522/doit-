@@ -22,7 +22,7 @@ int main(void)
 	printf("요소 개수: ");
 	scanf("%d", &nx);
 	puts("오름차순으로 입력하세요.\n");
-	x = calloc(nx+1, sizeof(int));
+	x = calloc(nx, sizeof(int));
 	printf("x[0]:");
 	scanf("%d", &x[0]);
 	for (i = 1; i < nx; i++)

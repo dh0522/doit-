@@ -18,7 +18,7 @@ int main(void)
 	puts("선형 검색(보초법)");
 	printf("요소 개수: ");
 	scanf("%d", &nx);
-	x = calloc(nx, sizeof(int));
+	x = calloc(nx+1, sizeof(int));
 	for (i = 0; i < nx; i++)
 	{
 		printf("x[%d]:", i);
