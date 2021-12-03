@@ -26,7 +26,7 @@ int Pop(IntStack* s, int* x) {
 	*x = s->stk[s->ptr--];
 	return 0;
 }
-int peek(const IntStack* s, int* x)
+int Peek(const IntStack* s, int* x)
 {
 	if (s->ptr <= 0)
 		return -1;
