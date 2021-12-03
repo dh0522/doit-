@@ -9,7 +9,7 @@ typedef struct {
 
 int Initialize(IntStack* s, int max);
 int Push(IntStack* s, int x);
-int Pop(IntStack* s, int x);
+int Pop(IntStack* s, int* x);
 int Peek(const IntStack* s, int* x);
 void Clear(IntStack* s);
 int Capacity(const IntStack* s);

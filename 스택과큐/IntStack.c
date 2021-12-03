@@ -5,7 +5,7 @@
 int Initialize(IntStack* s, int max)
 {
 	s->ptr = 0;
-	if ((s->stk = calloc(max, sizeof(int) == NULL)
+	if ((s->stk = calloc(max, sizeof(int))) == NULL)
 	{
 		s->max = 0;
 		return -1;
@@ -37,18 +37,18 @@ void Clear(IntStack* s)
 {
 	s->ptr = 0;
 }
-int capacity(const IntStack* s)
+int Capacity(const IntStack* s)
 {
 	return s->max;
 }
 int Size(const IntStack* s) {
 	return s->ptr;
 }
-int isEmpty(const IntStack* s)
+int IsEmpty(const IntStack* s)
 {
 	return s->ptr <= 0;
 }
-int isFull(const IntStack* s)
+int IsFull(const IntStack* s)
 {
 	return s->ptr >= s->max;
 }
@@ -68,7 +68,7 @@ void Print(const IntStack* s)
 	int i;
 	for (i = 0; i < s->ptr - 1; i++)
 	{
-		printf("%d ", s->str[i]);
+		printf("%d ", s->stk[i]);
 	}
 	printf("\n");
 }
